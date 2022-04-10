@@ -58,8 +58,8 @@
         <ul>
           <li><a class="nav-link scrollto " href="/">Home</a></li>
 
-          <li><a class="nav-link scrollto" href="#departments">Patients Details</a></li>
-          <li><a class="nav-link scrollto" href="#doctors">Available Beds</a></li>
+          <li><a class="nav-link scrollto" href="/pdetails">Ticket Details</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#doctors">Available Beds</a></li> -->
 
 {% if current_user.is_authenticated %}
 
@@ -74,7 +74,7 @@
           <li class="dropdown"><a href="/login"><span>Sign In</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/login">User Login</a></li>
-              <li><a href="/hospitallogin">Hospital Login</a></li>
+              <li><a href="/stadium-login">Stadium Login</a></li>
               <li><a href="/admin">Admin Login</a></li>
            
             </ul>
@@ -86,7 +86,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Bed Booking Slot</span> Book Now</a>
+      <a href="/slotbooking" class="appointment-btn scrollto"><span class="d-none d-md-inline">Book Tickets Now</span></a>
 
     </div>
   </header><!-- End Header -->
@@ -116,13 +116,13 @@
 
       </div>
 
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
       </a>
 
       <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
+      </a> -->
 
     </div>
   </section><!-- End Hero -->

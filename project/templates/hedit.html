@@ -22,7 +22,7 @@
     <div class="col-md-4">
       <div class="card">
         {% include "message.html" %}
-        <h4 class="text-center text-success">Covid Care Center</h4>
+        <h4 class="text-center text-success">Match Care Center</h4>
         <div class="card-body bg-light">
 
           <form action="/hedit/{{posts.id}}" method="post">
@@ -52,9 +52,9 @@
               <input
                 type="number"
                 class="form-control mt-2"
-                name="normalbed"
+                name="silver_ticket"
                 placeholder="Normal Bed Available?"
-               value={{posts.normalbed}}
+               value={{posts.silver_ticket}}
                 required
               />
             </div>

@@ -1,0 +1,331 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for Windows32
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Apr 10 12:52:52 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+JAVA_HOME = C:\Program Files\Java\jdk-17.0.2
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\ash
+# environment
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+# environment
+C_INCLUDE_PATH = C:\Users\ash\scoop\apps\gcc\current\include
+# environment
+LOCALAPPDATA = C:\Users\ash\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ca673b33-b6f3-4647-9a98-dcd3fa2ddf1c-sock
+# environment
+WSLENV = WT_SESSION::WT_PROFILE_ID
+# environment
+VSCODE_CWD = D:\miniproject\project
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
+# default
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# environment
+GOPATH = C:\Users\ash\go
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9400_SUFESIJYSLRELRNX
+# environment
+VSCODE_BROWSER_CODE_LOADING = bypassHeatCheck
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\ash\AppData\Roaming\Code\CachedData\3866c3553be8b268c8a7f8c0482c0c0177aa8bfa
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = C:\Users\ash\AppData\Local\Temp
+# default
+.INCLUDE_DIRS = .
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\ash\OneDrive
+# environment
+CONDA_BAT = C:\Users\ash\anaconda3\condabin\conda.bat
+# makefile
+CURDIR := d:/miniproject/project
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# makefile
+MAKEFILE_LIST := 
+# environment
+CONDA_SHLVL = 0
+# automatic
+@F = $(notdir $@)
+# environment
+PT8HOME = C:\Program Files\Cisco Packet Tracer 8.0.1
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 9400
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+WT_PROFILE_ID = {0caa0dad-35be-5f56-a8ff-afceeeaa6101}
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\ash\OneDrive
+# default
+MAKE_HOST := Windows32
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := sh.exe
+# environment
+HOMEPATH = \Users\ash
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = C:\Users\ash\anaconda3\condabin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-17.0.2\bin;C:\Users\ash\AppData\Roaming\Python\Python38\Scripts;C:\MinGW\bin;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Scripts;c:\users\ash\appdata\local\programs\python\python38-32\lib\site-packages;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages;C:\Program Files\nodejs\bin;C:\Program Files\nodejs;C:\flutter_windows_1.17.5-stable\flutter\bin;C:\Program Files\Android\Android Studio\bin;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\selenium;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\pyperclip;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\selenium\webdriver;C:\Windows\System32\msvcp140.dll;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Lib\site-packages\psycopg2;C:\Program Files\PostgreSQL\12\bin;C:\sqlite3;C:\MinGW\mingw32\bin;C:\Program Files\heroku\bin;C:\Users\ash\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts;C:\Users\ash\AppData\Roaming\npm\node_modules\dev-server\bin;C:\Users\ash\AppData\Roaming\npm;C:\Program Files\MongoDB\Server\4.4\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Router 8.0\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\ash\anaconda3\Scripts;C:\Users\ash\chromedriver.exe;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files (x86)\dotnet\;C:\Program Files\Git\cmd;C:\Users\ash\scoop\apps\gcc\current\bin;C:\Users\ash\scoop\shims;C:\Users\ash\Downloads\fzf-0.29.0-windows_amd64;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\ash\.poetry\bin;C:\Users\ash\scoop\apps\nvm\current\nodejs\nodejs;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\ash\anaconda3;C:\Users\ash\anaconda3\Library\mingw-w64\bin;C:\Users\ash\anaconda3\Library\usr\bin;C:\Users\ash\anaconda3\Library\bin;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\ash\AppData\Local\Programs\Python\Python38-32\;C:\Users\ash\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\ash\AppData\Local\Programs\Python\Python39\;C:\Users\ash\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\ash\AppData\Local\Programs\Python\Python37\;C:\Users\ash\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\Ubuntu;C:\Users\Administrator\kali;C:\Users\ash\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ash\AppData\Roaming\Pub\Cache\bin;C:\Users\ash\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2020.2.3\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;C:\Users\ash\go\bin;C:\Users\ash\AppData\Local\Programs\oh-my-posh\bin;C:\Users\ash\AppData\Local\Programs\oh-my-posh\themes;C:\Program Files (x86)\GitHub CLI\;C:\Users\ash\spicetify-cli
+# environment
+COMPUTERNAME = LAPTOP-183PMHK2
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2020.2.3\bin;
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132916376224469513
+# environment
+QT_DEVICE_PIXEL_RATIO = auto
+# environment
+WT_SESSION = 89346b87-3b1c-4c40-bbdb-e7000aec6169
+# environment
+LOGONSERVER = \\LAPTOP-183PMHK2
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = ash
+# environment
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = LAPTOP-183PMHK2
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+VS140COMNTOOLS = C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+# environment
+OS = Windows_NT
+# environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
+DESKTOP = C:\Users\ash\Desktop
+# makefile
+.DEFAULT_GOAL := 
+# environment
+NVM_HOME = C:\Users\ash\scoop\apps\nvm\current
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-183PMHK2
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\ash\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+NVM_SYMLINK = C:\Users\ash\scoop\persist\nvm\nodejs\nodejs
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+CPLUS_INCLUDE_PATH = C:\Users\ash\scoop\apps\gcc\current\include
+# environment
+PYCHARM COMMUNITY EDITION = C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;
+# environment
+GOMODCACHE = C:\Users\ash\go\pkg\mod
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = C:\Users\ash\AppData\Local\Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\ca75cc994095c8e6fca15579ae99fe64-1.59.1-main-sock
+# environment
+GOPROXY = https://proxy.golang.org,direct
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+# environment
+PROCESSOR_REVISION = 8e0c
+# environment
+CONDA_EXE = C:\Users\ash\anaconda3\Scripts\conda.exe
+# environment
+CHOCOLATEYTOOLSLOCATION = C:\tools
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+# variable set hash-table stats:
+# Load=120/1024=12%, Rehash=0, Collisions=11/144=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key d:/miniproject/project, mtime 1649572661): 9 files, no impossibilities.
+
+# 9 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 16 / storage = 143 B / avg = 8 B
+# current buf: size = 8174 B / used = 143 B / count = 16 / avg = 8 B
+
+# strcache performance: lookups = 19 / hit rate = 15%
+# hash-table stats:
+# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Sun Apr 10 12:52:52 2022
+
+ 

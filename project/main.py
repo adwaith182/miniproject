@@ -38,7 +38,7 @@ login_manager=LoginManager(app)
 login_manager.login_view='login'
 
 # app.config['SQLALCHEMY_DATABASE_URI']='mysql://username:password@localhost/databsename'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:@localhost/covid'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql://root:Athul0491@localhost/football'
 db=SQLAlchemy(app)
 
 
@@ -71,7 +71,7 @@ class Hospitaldata(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     hcode=db.Column(db.String(20),unique=True)
     hname=db.Column(db.String(100))
-    normalbed=db.Column(db.Integer)
+    silver_ticket=db.Column(db.Integer)
     hicubed=db.Column(db.Integer)
     icubed=db.Column(db.Integer)
     vbed=db.Column(db.Integer)
@@ -79,7 +79,7 @@ class Hospitaldata(db.Model):
 class Trig(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     hcode=db.Column(db.String(20))
-    normalbed=db.Column(db.Integer)
+    silver_ticket=db.Column(db.Integer)
     hicubed=db.Column(db.Integer)
     icubed=db.Column(db.Integer)
     vbed=db.Column(db.Integer)
@@ -146,7 +146,7 @@ def login():
 
     return render_template("userlogin.html")
 
-@app.route('/hospitallogin',methods=['POST','GET'])
+@app.route('/stadium-login',methods=['POST','GET'])
 def hospitallogin():
     if request.method=="POST":
         email=request.form.get('email')
@@ -187,7 +187,7 @@ def logout():
 
 
 
-@app.route('/addHospitalUser',methods=['POST','GET'])
+@app.route('/add-stadium-official',methods=['POST','GET'])
 def hospitalUser():
    
     if('user' in session and session['user']==params['user']):
@@ -206,7 +206,7 @@ def hospitalUser():
 
             # my mail starts from here if you not need to send mail comment the below line
            
-            mail.send_message('COVID CARE CENTER',sender=params['gmail-user'],recipients=[email],body=f"Welcome thanks for choosing us\nYour Login Credentials Are:\n Email Address: {email}\nPassword: {password}\n\nHospital Code {hcode}\n\n Do not share your password\n\n\nThank You..." )
+            # mail.send_message('MATCH CARE CENTER',sender=params['gmail-user'],recipients=[email],body=f"Welcome thanks for choosing us\nYour Login Credentials Are:\n Email Address: {email}\nPassword: {password}\n\nStadium Code {hcode}\n\n Do not share your password\n\n\nThank You..." )
 
             flash("Data Sent and Inserted Successfully","warning")
             return render_template("addHosUser.html")
@@ -235,7 +235,7 @@ def logoutadmin():
     return redirect('/admin')
 
 
-@app.route("/addhospitalinfo",methods=['POST','GET'])
+@app.route("/add-stadium-info",methods=['POST','GET'])
 def addhospitalinfo():
     email=current_user.email
     posts=Hospitaluser.query.filter_by(email=email).first()
@@ -245,7 +245,7 @@ def addhospitalinfo():
     if request.method=="POST":
         hcode=request.form.get('hcode')
         hname=request.form.get('hname')
-        nbed=request.form.get('normalbed')
+        nbed=request.form.get('silver_ticket')
         hbed=request.form.get('hicubeds')
         ibed=request.form.get('icubeds')
         vbed=request.form.get('ventbeds')
@@ -256,7 +256,7 @@ def addhospitalinfo():
             flash("Data is already Present you can update it..","primary")
             return render_template("hospitaldata.html")
         if huser:            
-            db.engine.execute(f"INSERT INTO `hospitaldata` (`hcode`,`hname`,`normalbed`,`hicubed`,`icubed`,`vbed`) VALUES ('{hcode}','{hname}','{nbed}','{hbed}','{ibed}','{vbed}')")
+            db.engine.execute(f"INSERT INTO `hospitaldata` (`hcode`,`hname`,`silver_ticket`,`hicubed`,`icubed`,`vbed`) VALUES ('{hcode}','{hname}','{nbed}','{hbed}','{ibed}','{vbed}')")
             flash("Data Is Added","primary")
         else:
             flash("Hospital Code not Exist","warning")
@@ -275,14 +275,14 @@ def hedit(id):
     if request.method=="POST":
         hcode=request.form.get('hcode')
         hname=request.form.get('hname')
-        nbed=request.form.get('normalbed')
+        nbed=request.form.get('silver_ticket')
         hbed=request.form.get('hicubeds')
         ibed=request.form.get('icubeds')
         vbed=request.form.get('ventbeds')
         hcode=hcode.upper()
-        db.engine.execute(f"UPDATE `hospitaldata` SET `hcode` ='{hcode}',`hname`='{hname}',`normalbed`='{nbed}',`hicubed`='{hbed}',`icubed`='{ibed}',`vbed`='{vbed}' WHERE `hospitaldata`.`id`={id}")
+        db.engine.execute(f"UPDATE `hospitaldata` SET `hcode` ='{hcode}',`hname`='{hname}',`silver_ticket`='{nbed}',`hicubed`='{hbed}',`icubed`='{ibed}',`vbed`='{vbed}' WHERE `hospitaldata`.`id`={id}")
         flash("Slot Updated","info")
-        return redirect("/addhospitalinfo")
+        return redirect("/add-stadium-info")
 
     # posts=Hospitaldata.query.filter_by(id=id).first()
     return render_template("hedit.html",posts=posts)
@@ -293,7 +293,7 @@ def hedit(id):
 def hdelete(id):
     db.engine.execute(f"DELETE FROM `hospitaldata` WHERE `hospitaldata`.`id`={id}")
     flash("Date Deleted","danger")
-    return redirect("/addhospitalinfo")
+    return redirect("/add-stadium-info")
 
 
 @app.route("/pdetails",methods=['GET'])
@@ -315,7 +315,7 @@ def slotbooking():
         srfid=request.form.get('srfid')
         bedtype=request.form.get('bedtype')
         hcode=request.form.get('hcode')
-        spo2=request.form.get('spo2')
+        # spo2=request.form.get('spo2')
         pname=request.form.get('pname')
         pphone=request.form.get('pphone')
         paddress=request.form.get('paddress')  
@@ -326,12 +326,12 @@ def slotbooking():
         code=hcode
         dbb=db.engine.execute(f"SELECT * FROM `hospitaldata` WHERE `hospitaldata`.`hcode`='{code}' ")        
         bedtype=bedtype
-        if bedtype=="NormalBed":       
+        if bedtype=="silver_ticket":       
             for d in dbb:
-                seat=d.normalbed
+                seat=d.silver_ticket
                 print(seat)
                 ar=Hospitaldata.query.filter_by(hcode=code).first()
-                ar.normalbed=seat-1
+                ar.silver_ticket=seat-1
                 db.session.commit()
                 
             
@@ -362,10 +362,10 @@ def slotbooking():
 
         check=Hospitaldata.query.filter_by(hcode=hcode).first()
         if(seat>0 and check):
-            res=Bookingpatient(srfid=srfid,bedtype=bedtype,hcode=hcode,spo2=spo2,pname=pname,pphone=pphone,paddress=paddress)
+            res=Bookingpatient(srfid=srfid,bedtype=bedtype,hcode=hcode,spo2=0,pname=pname,pphone=pphone,paddress=paddress)
             db.session.add(res)
             db.session.commit()
-            flash("Slot is Booked kindly Visit Hospital for Further Procedure","success")
+            flash("Congratulations, Your slot is booked!","success")
         else:
             flash("Something Went Wrong","danger")
     

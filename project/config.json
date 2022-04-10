@@ -1,9 +1,8 @@
 {
-    "params":
-    {
-        "user":"anees",
-        "password":"anees123",
-        "gmail-user":"enter-gmail-id",
-        "gmail-password":"enter-gmail-id-password(original password of gmail)"
-    }
+  "params": {
+    "user": "anees",
+    "password": "anees123",
+    "gmail-user": "enter-gmail-id@gmail.com",
+    "gmail-password": "enter-gmail-id-password(original password of gmail)"
+  }
 }

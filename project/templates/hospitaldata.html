@@ -10,7 +10,7 @@ Add Hospital Information
 <br>
 
 <div class="container mt-4">
-<div class="display-4 text-center text-info">Add Hospital Data</div>
+<div class="display-4 text-center text-info">Add Stadium Data</div>
 <br>
 <div class="row">
 
@@ -18,10 +18,10 @@ Add Hospital Information
 
         <div class="card">
             {% include "message.html" %}
-            <h4 class="text-center text-success">Covid Care Center</h4>
+            <h4 class="text-center text-success">Match Care Center</h4>
             <div class="card-body bg-light">
 
-                <form action="/addhospitalinfo" method="post">
+                <form action="/add-stadium-info" method="post">
 
                     <div class="form-group">
                         <input type="text" class="form-control mt-2" name="hcode" 
@@ -30,22 +30,22 @@ Add Hospital Information
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control mt-2" name="hname" placeholder="Enter Hospital Name" required>
+                        <input type="text" class="form-control mt-2" name="hname" placeholder="Enter Stadium Name" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="number" class="form-control mt-2" name="normalbed" placeholder="Normal Bed Available?"  value="" required>
+                        <input type="number" class="form-control mt-2" name="silver_ticket" placeholder="Silver ticket Available?"  value="" required>
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control mt-2" name="hicubeds" placeholder="H.I.C.U Bed Available?" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="number" class="form-control mt-2" name="icubeds" placeholder="I.C.U Bed Available?" required>
+                        <input type="number" class="form-control mt-2" name="hicubeds" placeholder="Golden ticket Available?" required>
                     </div>
 
                     <div class="form-group">
-                        <input type="number" class="form-control mt-2" name="ventbeds" placeholder="Ventilators Bed Available?" required>
+                        <input type="number" class="form-control mt-2" name="icubeds" placeholder="Platinum ticket Available?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="number" class="form-control mt-2" name="ventbeds" placeholder="Deluxe ticket Available?" required>
                     </div>
                  
                     <br>
@@ -71,15 +71,15 @@ Add Hospital Information
               </div>
               <div class="col-md-8">
                 <div class="card-body bg-dark">
-                  <h5 class="card-title text-center bg-light">Hospital Data</h5>
+                  <h5 class="card-title text-center bg-light">Stadium Data</h5>
                   <div class="card bg-dark" style="width: 28rem;">
                     <ul class="list-group list-group-flush bg-dark">
-                      <li class="list-group-item">Hospital Code : <b>{{postsdata.hcode}}</b> </li>
-                      <li class="list-group-item">Hospital Name : <b>{{postsdata.hname}}</b></li>
-                      <li class="list-group-item">Normal Beds Available :<b>{{postsdata.normalbed}}</b>  </li>
-                      <li class="list-group-item">H.I.C.U Beds Available: <b>{{postsdata.hicubed}}</b> </li>
-                      <li class="list-group-item">I.C.U Beds Available :<b>{{postsdata.icubed}}</b> </li>
-                      <li class="list-group-item">Ventilators Beds Available : <b>{{postsdata.vbed}}</b></li>
+                      <li class="list-group-item">Stadium Code : <b>{{postsdata.hcode}}</b> </li>
+                      <li class="list-group-item">Stadium Name : <b>{{postsdata.hname}}</b></li>
+                      <li class="list-group-item">Silver Ticket Available :<b>{{postsdata.silver_ticket}}</b>  </li>
+                      <li class="list-group-item">Golden Ticket Available: <b>{{postsdata.hicubed}}</b> </li>
+                      <li class="list-group-item">Platinum Ticket Available :<b>{{postsdata.icubed}}</b> </li>
+                      <li class="list-group-item">Deluxe Ticket Available : <b>{{postsdata.vbed}}</b></li>
                       <li class="list-group-item"><a href="/hedit/{{postsdata.id}}"><i class="fas fa-edit"></i></a> </i>
                   
                           <a class="ml-4" confirm('Are you sure to Delete data'); href="/hdelete/{{postsdata.id}}"><i class="fas fa-trash-alt"></i></a>
